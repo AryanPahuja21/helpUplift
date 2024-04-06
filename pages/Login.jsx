@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/Components/ui/button";
 import {
   Card,
   CardContent,
@@ -18,9 +18,13 @@ const Login = () => {
     <div className="flex justify-center items-center h-screen ">
       <img src="https://preview.redd.it/t7b5j2cqpce21.png?auto=webp&s=722e7dcb6a150fc6be3513ab186cc60db0a9ab27"></img>
       <Tabs defaultValue="account" className="w-[600px] absolute">
-        <TabsList className="bg-gray-100 grid w-full grid-cols-2 border border-2 rounded-2xl border-black">
-          <TabsTrigger value="account" className="bg-white rounded-3xl">As Organization</TabsTrigger>
-          <TabsTrigger value="password" className="bg-white rounded-3xl" >As Volunteer</TabsTrigger>
+        <TabsList className="bg-gray-100 grid w-full grid-cols-2 border-2 rounded-2xl border-black">
+          <TabsTrigger value="account" className="bg-white rounded-3xl">
+            As Organization
+          </TabsTrigger>
+          <TabsTrigger value="password" className="bg-white rounded-3xl">
+            As Volunteer
+          </TabsTrigger>
         </TabsList>
         <TabsContent value="account">
           <Card className="border border-black m-10 rounded-2xl  bg-white">
@@ -68,7 +72,9 @@ const Login = () => {
               </div>
             </CardContent>
             <CardFooter>
-              <Button className="w-full border-2 rounded">Create account</Button>
+              <Button className="w-full border-2 rounded">
+                Create account
+              </Button>
             </CardFooter>
           </Card>
         </TabsContent>
